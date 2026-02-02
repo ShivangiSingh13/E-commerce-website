@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SheStyle | Simple E-Commerce</title>
+  <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h2 class="logo">She<span>Style</span></h2>
+  <nav>
+    <button class="nav-btn" data-category="home">Home</button>
+    <button class="nav-btn" data-category="dresses">Dresses</button>
+    <button class="nav-btn" data-category="cosmetics">Cosmetics</button>
+    <button class="nav-btn" data-category="footwear">Footwear</button>
+    <button class="nav-btn" data-category="accessories">Accessories</button>
+    <button class="nav-btn" data-category="contact">Contact</button>
+  </nav>
+
+  <div class="nav-icons">
+  <div class="wishlist-icon">
+    ❤️ Wishlist (<span id="wishlist-count">0</span>)
+  </div>
+
+  <div class="cart-icon" id="cart-icon">
+    🛒 Cart (<span id="cart-count">0</span>)
+  </div>
+</div>
+
+</header>
+<section id="home" class="section active home">
+  <div class="hero-box">
+    <div class="hero-text">
+      <h1>
+        Fashion & Beauty <br>
+        <span>For Every Woman</span>
+      </h1>
+      <p>
+        Discover the latest trends in dresses, cosmetics, footwear, and accessories.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="primary-btn" data-go="dresses">Shop Dresses</button>
+        <button class="secondary-btn" data-go="cosmetics">Explore Beauty</button>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://i.pinimg.com/originals/67/b7/c4/67b7c40fe9c2d38d0683b754177928a7.jpg" alt="Fashion">
+    </div>
+  </div>
+
+  <section class="best-sellers">
+  <h2>⭐ Best Sellers</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://i0.wp.com/www.weddingforward.com/wp-content/uploads/2023/03/floral-wedding-dresses-watercolor-strapless-neckline-puff-sleeves-moonight.jpg?fit=1080%2C1350&quality=70&ssl=1">
+      <h3>Floral Dress</h3>
+      <p>₹1999</p>
+      <div class="card-actions">
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="heart-btn">♡</button>
+    </div>
+
+    </div>
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0070/8853/7651/files/07401-5318_1_GOLD_RHINESPIRALBLOCKHEEL074015318072.webp?v=1739559307&width=886&height=1000">
+      <h3>Heels</h3>
+      <p>₹2499</p>
+      <div class="card-actions">
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="heart-btn">♡</button>
+    </div>
+    </div>
+
+    <div class="card">
+      <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/9/a/9ac48adRCPH-BL-29-6_6.jpg?rnd=20200526195200&tr=w-900">
+      <h3>Handbag</h3>
+      <p>₹1799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/9b/69/3d/9b693d4bea6d33081d66aec259f69258.jpg">
+      <h3>Necklace</h3>
+      <p>₹4799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/0/3/039ed30RS111_1.jpg?rnd=20200526195200&tr=w-900">
+      <h3>Cluch</h3>
+      <p>₹999</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+    </div>
+  </div>
+
+    <div class="card">
+      <img src="https://i.etsystatic.com/6293935/r/il/2efcc6/4098144471/il_1080xN.4098144471_nnkv.jpg">
+      <h3>Earings</h3>
+      <p>₹799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+    </div>
+
+  </div>
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.DTBUlKURT2V-vHupJkoU8AHaHa?pid=Api&P=0&h=180">
+      <h3>Watch</h3>
+      <p>₹1799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="features">
+    <div class="feature-card">🚚 <p>Fast Delivery</p></div>
+    <div class="feature-card">💳 <p>Secure Payment</p></div>
+    <div class="feature-card">🔥 <p>Latest Trends</p></div>
+    <div class="feature-card">💖 <p>Loved by Women</p></div>
+  </div>
+
+</section>
+
+<section id="dresses" class="section">
+  <h2>Dresses</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://4.bp.blogspot.com/-hNjZJi0wlJA/VGIIrfNz48I/AAAAAAAAENc/QQ_hzPit0UE/s1600/pink%2Bfloral%2Bdresses.jpeg" alt="Floral Dress">
+      <h3>Floral Dress</h3>
+      <p class="price">₹1999</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="http://fashionbeautynews.com/wp-content/uploads/2015/01/2015-Dark-Blue-Color-One-Shoulder-Pleats-Long-Evening-Dresses-Floor-Length-Chiffon-A-line-Crystal-680x1024.jpg" alt="Party Dress">
+      <h3>Party Dress</h3>
+      <p class="price">₹2799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.etsystatic.com/18771955/r/il/9157c5/3165751114/il_1588xN.3165751114_8dui.jpg" alt="Maxi Dress">
+      <h3>Maxi Dress</h3>
+      <p class="price">₹2299</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn-4.jjshouse.com/upimg/jjshouse/s1140/07/63/4349466f3f7e17a736057e395e4c0763.jpg" alt="A-Line Dress">
+      <h3>A-Line Dress</h3>
+      <p class="price">₹1899</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.alamodelabel.in/cdn/shop/files/A1297156-6079-426C-A175-733D6ED1BEF1.jpg" alt="Bodycon Dress">
+      <h3>Bodycon Dress</h3>
+      <p class="price">₹2599</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.lulus.com/images/product/w_560/3072250_460462.jpg" alt="Wrap Dress">
+      <h3>Wrap Dress</h3>
+      <p class="price">₹2099</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn-img.prettylittlething.com/a/7/3/9/a7398b04f04d30f81fc99cb5fea544005eb38311_cnk5859_1.jpg" alt="Shift Dress">
+      <h3>Shift Dress</h3>
+      <p class="price">₹1799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.oldmarigold.com/cdn/shop/files/1_d7d02fbf-f3fd-4de0-8c20-bc1dd101d045.png" alt="Summer Dress">
+      <h3>Summer Dress</h3>
+      <p class="price">₹1599</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://xcdn.next.co.uk/COMMON/Items/Default/Default/ItemImages/AltItemZoom/543581s5.jpg" alt="Denim Dress">
+      <h3>Denim Dress</h3>
+      <p class="price">₹2199</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/ce/14/11/ce1411c94d3f97088398d9fcf8f41001.jpg" alt="Evening Gown">
+      <h3>Evening Gown</h3>
+      <p class="price">₹3499</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://ae01.alicdn.com/kf/HTB1w5vVupGWBuNjy0Fbq6z4sXXaB/Bohemian-Floral-Print-Maxi-Dress-Fashion-V-Neck-With-Tie-Kimono-Gown-Women-Three-Quarter-Sleeve.jpg" alt="Bodycon Dress">
+      <h3>Boho Dress</h3>
+      <p class="price">₹2599</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.essensedesigns.com/uploads/2024/09/D4098-01.jpg" alt="Wrap Dress">
+      <h3>Off shoulder Dress</h3>
+      <p class="price">₹2099</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/a6/91/97/a69197e74520f6c513726d4b8f732272.jpg" alt="Shift Dress">
+      <h3>Short Dress</h3>
+      <p class="price">₹1799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://oldnavy.gap.com/webcontent/0056/030/574/cn56030574.jpg" alt="Summer Dress">
+      <h3>Midi Dress</h3>
+      <p class="price">₹1599</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/e4/a7/fc/e4a7fcf33d48037b6436e1aa4e38a230.jpg" alt="Denim Dress">
+      <h3>Ruffle Dress</h3>
+      <p class="price">₹2199</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0144/7018/5017/products/ladivine-cd242s-bell-sleeve-pleated-formal-dress-prom-dresses-31757326123091.jpg?v=1670505396" alt="Denim Dress">
+      <h3>Pleated Dress</h3>
+      <p class="price">₹2199</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cosmetics" class="section">
+  <h2>Cosmetics</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/d1/44/cf/d144cf71d35f4fc1857d306b3c95a029.jpg" alt="Lipstick">
+      <h3>Lipstick</h3>
+      <p class="price">₹499</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.allure.com/photos/63d9a309dc36bb79e3ad5a7e/master/w_1280%2Cc_limit/makeup-by-mario-1.jpeg" alt="Foundation">
+      <h3>Foundation</h3>
+      <p class="price">₹799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.dunyaatlasi.com/wp-content/uploads/2020/10/maskara-kullanimi.jpg" alt="mascara">
+      <h3>Mascara</h3>
+      <p class="price">₹549</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.nyxcosmetics.com/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw72aef660/ProductImages/2022/EYES/NEW-VIVID-MATTE-LIQUID-LINER/NYX-PMU-Makeup-Eyes-Eyeliner-VIVID-MATTE-LIQUID-LINER-VMLL01-BLACK-0800897233860-OpenSwatch.jpg">
+      <h3>Eyeliner</h3>
+      <p>₹399</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgX_aUsBwd7EXYwpBnUvYSSMV9MPOyK4z5voM-yAaAXMVnkdTCt8UaBt2NFeMoKRSPBZHw6vt5qcrLZWqGh4x1gFbfU6_BRGJRnD-UwTvTiEwVHPw8Lm9Wqq8lCKl6aACnaObW1A-cxxbNk/s1600/The+ONE+IlluSkin+Blush6+ZSHXCM0YKAR5VOWIEB.jpg">
+      <h3>Blush</h3>
+      <p>₹599</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.dynapharmnamibia.com/wp-content/uploads/2025/03/compact.jpg">
+      <h3>Compact</h3>
+      <p>₹449</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dw80d75c47/83404_IlluminatingFacePrimerShortA.jpg?sw=1100&sh=1100&sm=fit&sfrm=png">
+      <h3>Primer</h3>
+      <p>₹699</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/91TWfPqA3HL._SL1500_.jpg">
+      <h3>Nail Polish</h3>
+      <p>₹299</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61O1Yz7RJ9L._AC_.jpg">
+      <h3>Highlighter</h3>
+      <p>₹649</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.kindlyunspoken.com/wp-content/uploads/2018/02/facebook-Linked_Image___Makeup-Brush-Guide-1.jpg">
+      <h3>Makeup Brushes</h3>
+      <p>₹899</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1758295430-ICONIC_Kajal_CHOCOLATE-BROWN-with-Swatch-1500x1500.jpg?crop=1xw:1.00xh;center,top&resize=980:*">
+      <h3>Kajal</h3>
+      <p>₹449</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.huffingtonpost.com/asset/642e576a2600001d009f759b.jpg?ops=scalefit_960_noupscale">
+      <h3>Moisturizer</h3>
+      <p>₹449</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/51s+i5KcE-L._SL1500_.jpg">
+      <h3>Sunscream</h3>
+      <p>₹699</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://officemakeups.com/storage/images/Gallery/d09bf41544a3365a46c9077ebb5e35c3/Setting-Spray-scaled.jpg">
+      <h3>Setting spray</h3>
+      <p>₹299</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0310/4925/3001/products/lipgloss_40399ad3-ffae-4503-90c9-2c2a2f9ac5b5.jpg?v=1665471935">
+      <h3>Lip gloss</h3>
+      <p>₹649</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/41weqnSL2wL._SL1000_.jpg">
+      <h3>Face Serum</h3>
+      <p>₹899</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="footwear" class="section">
+  <h2>Footwear</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.herzindagi.info/image/2020/Jun/how-to-buy-high-heels.jpg">
+      <h3>Heels</h3>
+      <p>₹2499</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://www.merkis.com.bd/wp-content/uploads/2023/08/591-01.jpg">
+      <h3>Sneakers</h3>
+      <p>₹1999</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.etsystatic.com/9547208/r/il/66820c/2294152900/il_fullxfull.2294152900_jmyr.jpg">
+      <h3>Sandals</h3>
+      <p>₹1499</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://usamerica.shop/wp-content/uploads/2023/02/Winter-Boots-Women-Snow-Booties-Ladies-Mid-Calf-Boots-Warm-Platform-Boot-Fur-Suede-Woman-Ankle.jpg_-1.jpg">
+      <h3>Boots</h3>
+      <p>₹2999</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/30291124/2024/9/23/2f69330f-d20f-41bf-9741-54dd1e98eda41727076207219-DressBerry-Women-Embellished-Flats-8601727076206772-1.jpg">
+      <h3>Flats</h3>
+      <p>₹1299</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://asda.scene7.com/is/image/Asda/5059192133473?hei=684&wid=516&qlt=85&fmt=pjpg&resmode=sharp&op_usm=1.1,0.5,0,0&defaultimage=default_details_George_rd">
+      <h3>Loafers</h3>
+      <p>₹1799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/85/97/66/859766e6e1dfb6193867c004a8cb958d.jpg">
+      <h3>Wedges</h3>
+      <p>₹2199</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.media.amplience.net/i/office/4960585002_pr1.jpg?$newhighres$&fmt=auto&qlt=default&fmt.jpeg.interlaced=true">
+      <h3>Sliders</h3>
+      <p>₹999</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.bfgcdn.com/1500_1500_90/123-0619/asics-womens-gel-fujitrabuco-sky-trail-running-shoes-detail-7.jpg">
+      <h3>Running Shoes</h3>
+      <p>₹2799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="http://3.bp.blogspot.com/_nY8EJnhqkYU/S_wwnl9sNUI/AAAAAAAACIE/fdI8qcO1KCM/s1600/flip+flop+straps.+May+(8).JPG">
+      <h3>Flip Flops</h3>
+      <p>₹699</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://i.pinimg.com/736x/8b/f5/a1/8bf5a19cf7df9b2f16ee13aef5b7cedc--crochet-flats-leather-flats.jpg">
+      <h3>Crochet Flats</h3>
+      <p>₹1999</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/1f/ef/d4/1fefd457faedd80e1c1323822a54b44b.jpg">
+      <h3>Ballet Flats</h3>
+      <p>₹1499</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/b1/15/4a/b1154a8865de6efe0a6df48dacde941e.jpg">
+      <h3>Ankle Strap Heels</h3>
+      <p>₹2999</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.vogue.fr/photos/6266ad0f3d3eb020b3ea86c4/master/w_1280%2Cc_limit/prada.jpg">
+      <h3>Espadrilles</h3>
+      <p>₹1299</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.usmagazine.com/wp-content/uploads/2023/09/ZapposThumb.jpg?w=900&h=506&crop=1&quality=86&strip=all">
+      <h3>Mary jane shoes</h3>
+      <p>₹1799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61AaORUE3yL._AC_SL1500_.jpg">
+      <h3>Mules</h3>
+      <p>₹1799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="accessories" class="section">
+  <h2>Accessories</h2>
+  <div class="grid">
+    <div class="card"><img src="https://sc04.alicdn.com/kf/He18cc5474e23408fab819fc7770931814/254097870/He18cc5474e23408fab819fc7770931814.jpg">
+      <h3>Handbag</h3>
+      <p>₹1799</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://m.media-amazon.com/images/I/61eLQSk6SwL._UL1100_.jpg">
+      <h3>Watch</h3>
+      <p>₹1499</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://img.drz.lazcdn.com/static/lk/p/d2297c0bf95528f9bea9120c3f1ddef1.jpg_720x720q80.jpg_.webp">
+      <h3>Sunglasses</h3>
+      <p>₹999</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://css.brilliantearth.com/static/img/gateway/necklaces/ir350/NecklacesGateway_Review_Image2_Mobile.jpg">
+      <h3>Necklace</h3>
+      <p>₹899</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>>
+    </div>
+
+    <div class="card"><img src="https://i.etsystatic.com/6120089/r/il/07a408/4181783930/il_1080xN.4181783930_tcwu.jpg">
+      <h3>Earrings</h3>
+      <p>₹599</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://i.pinimg.com/736x/8a/96/33/8a96332d0d772a9b6366ddaccdfc5e03.jpg">
+      <h3>Bracelet</h3>
+      <p>₹499</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://www.giva.co/cdn/shop/files/A0150_2.jpg?v=1717071196&width=940">
+      <h3>Anklet</h3>
+      <p>₹399</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://i.etsystatic.com/12172299/r/il/999d88/4169041550/il_794xN.4169041550_sazq.jpg">
+      <h3>Hair Band</h3>
+      <p>₹199</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://m.media-amazon.com/images/I/A1oLGbfhUsL._AC_UY1000_.jpg">
+      <h3>Clutch</h3>
+      <p>₹1299</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.etsystatic.com/7898094/r/il/fcc5e1/2423977858/il_1080xN.2423977858_75ed.jpg">
+      <h3>Ring Set</h3>
+      <p>₹699</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://tse1.mm.bing.net/th/id/OIP.NMgjkZZawu1nCQLcNIvpqAHaIo?pid=Api&P=0&w=300&h=300">
+      <h3>Brooch</h3>
+      <p>₹499</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://m.media-amazon.com/images/I/71YOpfCTxFL._AC_UY1000_.jpg">
+      <h3>Cap</h3>
+      <p>₹599</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>>
+    </div>
+
+    <div class="card"><img src="https://i.pinimg.com/originals/dd/96/03/dd9603cd9eb18794c49343b0f0731fa1.jpg">
+      <h3>Hat</h3>
+      <p>₹899</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://images.herzindagi.info/image/2022/Nov/kashmiri-jhumka.jpg">
+      <h3>Jhumka</h3>
+      <p>₹499</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://i5.walmartimages.com/seo/Scarfs-For-Women-Ladies-Scarf-Striped-Color-Plaid-Shawl-Elegant-Ladies-Style-Warm-Comfortable-Autumn-And-Winter-Scarves_80c1e0f1-7de0-40c2-8525-e600ba9b7722.3cc5fa36f733f94462c0e994b50cf44c.jpeg">
+      <h3>Scarf</h3>
+      <p>₹399</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://cdn2.stylecraze.com/wp-content/uploads/product-images/jasgood-vintage-western-belt_afl476.jpg.webp">
+      <h3>Belt</h3>
+      <p>₹199</p>
+      <div class="card-actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="heart-btn">♡</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <p><strong>Email:</strong> support@shestyle.com</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Address:</strong> Punjab, India</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script src="pro.js"></script>
+</body>
+</html>
